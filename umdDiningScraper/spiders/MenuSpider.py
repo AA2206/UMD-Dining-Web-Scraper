@@ -1,5 +1,5 @@
 import scrapy
-from umdDiningScrapper.items import entreeItem
+from umdDiningScraper.items import entreeItem
 from scrapy_playwright.page import PageMethod
 from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 

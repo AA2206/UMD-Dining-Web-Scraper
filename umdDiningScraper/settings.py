@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
-# Scrapy settings for umdDiningScrapper project
+# Scrapy settings for umdDiningScraper project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -13,16 +13,16 @@ load_dotenv()
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "umdDiningScrapper"
+BOT_NAME = "umdDiningScraper"
 
-SPIDER_MODULES = ["umdDiningScrapper.spiders"]
-NEWSPIDER_MODULE = "umdDiningScrapper.spiders"
+SPIDER_MODULES = ["umdDiningScraper.spiders"]
+NEWSPIDER_MODULE = "umdDiningScraper.spiders"
 
 ADDONS = {}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "umdDiningScrapper (+http://www.yourdomain.com)"
+#USER_AGENT = "umdDiningScraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -55,13 +55,13 @@ DOWNLOAD_DELAY = 1
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "umdDiningScrapper.middlewares.UmddiningscrapperSpiderMiddleware": 543,
+#    "umdDiningScraper.middlewares.UmddiningscrapperSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "umdDiningScrapper.middlewares.UmddiningscrapperDownloaderMiddleware": 543,
+#    "umdDiningScraper.middlewares.UmddiningscrapperDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -73,7 +73,7 @@ DOWNLOAD_DELAY = 1
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "umdDiningScrapper.pipelines.MongoPipeline": 300,
+    "umdDiningScraper.pipelines.MongoPipeline": 300,
 }
 
 MONGO_URI = os.getenv('MONGO_URI')
