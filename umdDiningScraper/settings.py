@@ -20,6 +20,7 @@ NEWSPIDER_MODULE = "umdDiningScraper.spiders"
 
 ADDONS = {}
 
+LOG_STDOUT = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "umdDiningScraper (+http://www.yourdomain.com)"
